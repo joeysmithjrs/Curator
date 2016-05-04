@@ -1,0 +1,100 @@
+/* CSS Document */
+body.page1 {
+	background-color:rgba(159,205,219,1.00) ;
+	background-image: ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+h1.title {
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 20px;
+}
+h2 {
+	font-family: "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+h1, h2{
+	font-size: 4em;
+	background-color: rgba(115,124,185,1.00);
+	margin-left: 10%;
+	margin-right: 50%;
+	margin: 0;
+	padding: 2%;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(70,98,132,1.00);
+	
+}
+.text {
+	font-size: 1.5em;
+	letter-spacing: .15em;
+	font-weight: bold;
+}
+li{
+	display: inline-block;
+	text-align: center;
+	width: 19%;
+	background-color: rgba(239,210,210,1.00);
+	padding-top: 1%;
+	margin: 0;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: rgba(113,166,194,1.00);
+	width: 90%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-top: 0;
+	margin-left: 3%;
+	margin-right: 3%;
+	align-content: center;
+	text-decoraton: none;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content a {
+	background-color: rgba(36,63,179,1.00);
+	color: rgba(44,34,84,1.00);
+	padding: 10px 20px;
+	text-decoraton: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(137,145,163,1.00);
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 1.1em;
+}
+
+img.slider {
+	width: 25%;
+	height: 20%;
+	align-content: center;
+	margin-left: 37%;
+	margin-right: 20%;
+	padding: 10px;
+}
+.recent {
+	background-color: rgba(226,191,192,1.00);
+	width: 15%;
+	height: 400px;
+	margin-left: 10%;
+	margin-top:3%;
+	margin-right: 65%;
+}
