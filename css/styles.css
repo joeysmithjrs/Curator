@@ -53,11 +53,16 @@ li{
 	display: inline-block;
 	text-align: center;
 	width: 18%;
-	background-color: rgba(239,210,210,1.00);
 	padding-top: 1%;
 	margin-top: 1%;
-	margin: 0;
-	border-radius: 50%;
+	margin: 0%;
+	border-radius: 60%;
+}
+.orange {
+	background-color: rgba(232,180,43,1.00);
+}
+.green {
+	background-color: rgba(33,166,29,1.00);
 }
 
 .dropdown-content{
@@ -92,3 +97,14 @@ li{
 	letter-spacing: 0.1em;
 	font-size: 1.1em;
 }
+img {
+	height: 40%;
+	width: 40%;
+}
+.backgroundTrasp {
+	background-color: red;
+	width: 95%;
+	height: 75%;
+	margin-top: 20%;
+}
+	

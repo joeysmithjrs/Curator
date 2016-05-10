@@ -79,7 +79,7 @@ function manageAlpha() {
     alphaVar = Math.abs(Math.sin(sinCounter));
 	
 	if (Math.abs(Math.sin(sinCounter))<=0.15) {
-		alphaVar = (Math.abs(Math.sin(sinCounter)) + .075)
+		alphaVar = (Math.abs(Math.sin(sinCounter)) + .035)
 	}
 }
 
