@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 body.page1 {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -18,9 +19,10 @@ h1.title {
 	text-align: center;
 	margin-left: 30%;
 	margin-right: 30%;
-	margin-bottom: 5px;
-	padding: 1%;
-	margin-top: 5px;
+	margin-bottom: 1px;
+	padding: 0%;
+	margin-top: 1px;
+	position: relative;
 }
 h2 {
 	font-family: "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
@@ -34,77 +36,109 @@ h2 {
 }
 
 
-ul {
+.catContainer {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
 	background-color: rgba(136,175,195,1.00);
-	border-radius: 10%;
-	height: 19%;
+	border-radius: 50%;
+	height: 10%;
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	position: absolute;
+	margin-top: 0;
+	margin-bottom: 0;
 	
 }
-.text {
-	font-size: 1.5em;
-	letter-spacing: .15em;
-	font-weight: bold;
-	font-family: 'Gloria Hallelujah', cursive;
-}
-li{
+
+.categories {
 	display: inline-block;
 	text-align: center;
 	width: 18%;
 	padding-top: 1%;
 	margin-top: 1%;
-	margin: 0%;
-	border-radius: 60%;
+	padding-left: 1%;
 }
-.orange {
-	background-color: rgba(232,180,43,1.00);
-}
-.green {
-	background-color: rgba(33,166,29,1.00);
+.text {
+	font-size: 1.5em;
+	letter-spacing: .15em;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
 }
 
-.dropdown-content{
-	display: none;
-	position: absolute;
-	background-color: rgba(113,166,194,1.00);
-	width: 90%;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	margin-top: 0;
-	margin-left: 3%;
-	margin-right: 3%;
-	align-content: center;
-	text-decoraton: none;
+.floatIt {
+	float: left;
 }
-.dropdown {
+#firstCat {
+	padding-left: 9%;
+}
+#firstCat, #lastCat {
+	width: 14%;
+	height: 100%;
+	padding-bottom: 2.2%;
 	position: relative;
 }
-.dropdown:hover .dropdown-content {
-	display: block;
+#beforeMid, #afterMid {
+	width: 16%;
+	height: 100%;
+	padding-bottom: 1.6%;
+	z-index: 1000;
+	position: relative;
 }
-.dropdown-content a {
-	background-color: rgba(36,63,179,1.00);
-	color: rgba(44,34,84,1.00);
-	padding: 10px 20px;
-	text-decoraton: none;
-	display: block;
+#midCat {
+	width: 18%;
+	height: 110%;
+}
+.label {
+	font-family: "Pacifico" ,"Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	position: absolute;
+	text-align: center;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 1%;
 }
 
-.dropdown-content a:hover {
-	background-color: rgba(137,145,163,1.00);
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	font-size: 1.1em;
+.dissappear{
+	display: none;
 }
-img {
-	height: 40%;
-	width: 40%;
+
+#twitterIcon {
+	width: 20%;
+	height: 20%;
+	position: relative;
 }
-.backgroundTrasp {
-	background-color: red;
-	width: 95%;
-	height: 75%;
-	margin-top: 20%;
+.backgroundCont {
+	background-color: rgba(255,255,255,0.39);
+	list-style-type: none;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	position: absolute;
+	margin-top: 11%;
+	margin-bottom: 0;
+	align-content: center;
 }
-	
+#catChange {
+	border-radius: 50%;
+	background-color: #FEFEF2;
+	margin-top: -15px;
+	border-color: none;
+	border: none;
+}
+a {
+	text-decoration: none;
+}
+.homeLink {
+	color: black;
+}
+#twitter {
+	width: 10%;
+	height: 10%;
+}
+.socialMedia {
+	display: inline-block;
+	float: right;
+}
