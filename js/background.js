@@ -66,6 +66,7 @@ var sinCounter = 0;
 function setColor(){
 	
 	$('body.page1').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
+	$('#sliderCont').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
 	
 	colorCounter += 1;
 		if(colorCounter >= numberOfColors){

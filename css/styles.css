@@ -120,6 +120,7 @@ h2 {
 	margin-top: 11%;
 	margin-bottom: 0;
 	align-content: center;
+	
 }
 #catChange {
 	border-radius: 50%;
@@ -137,8 +138,23 @@ a {
 #twitter {
 	width: 10%;
 	height: 10%;
+	float: right;
+	display: inline-block;
+	margin-top: 2%;
 }
 .socialMedia {
 	display: inline-block;
-	float: right;
 }
+.slider { 
+
+}
+
+#sliderCont {
+	left-margin: 35%;
+	right-margin: 35%;
+	top-margin: 40%:;
+	bottom-margin: 40%;
+	background-color: cyan;
+	z-index: 1001;
+}
+	
