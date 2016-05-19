@@ -1,8 +1,35 @@
 var changeIt = ""
+var backgroundPic = new Array(4);
+
+backgroundPic[0] = '(images/displayPic1.jpg)';
+backgroundPic[1] = '(images/displayPic2.jpg)';
+backgroundPic[2] = '(images/displayPic3.jpg)';
+backgroundPic[3] = '(images/displayPic4.jpg)';
+backgroundPic[4] = '(images/displayPic5.jpg)';
+
+var picCounter = 0;
+var numberOfPics = 5;
+var picTimer;
+
+function setPic(){
+	//alert("hi I want this pic: " + backgroundPic[picCounter]);
+	$('slider').css('background-image', url + "backgroundPic[picCounter]");
+
+	picCounter += 1;
+		if(picCounter >= numberOfPics){
+		picCounter = 0;
+	}
+		
+}
 
 $(document).ready(function(){
-
 	
+	$('recentPosts').scrollNav();
+	
+	$('slider').css('background-image', backgroundPic[picCounter]);
+	
+	picTimer = setInterval(setPic, 2000);
+
 	$("#firstCat").hover(function () { 
 			   $(this).animate({'height': '104%'}, { duration: 100, queue: false });
 			   $(this).animate({'width': '16%'}, { duration: 100, queue: false });
