@@ -1,34 +1,25 @@
-var changeIt = ""
-var backgroundPic = new Array(4);
-
-backgroundPic[0] = '(images/displayPic1.jpg)';
-backgroundPic[1] = '(images/displayPic2.jpg)';
-backgroundPic[2] = '(images/displayPic3.jpg)';
-backgroundPic[3] = '(images/displayPic4.jpg)';
-backgroundPic[4] = '(images/displayPic5.jpg)';
-
+var sliderBackgroundPic = [ 'images/displayPic1.jpg', 'images/displayPic2.jpg', 'images/displayPic3.jpg', 'images/displayPic4.jpg', 'images/displayPic5.jpg' ]; 
+var sliderProfilePic = [ 'images/prof1.jpg', 'images/prof2.png', 'images/prof3.jpg', 'images/prof4.png', 'images/prof5.jpeg' ];    
+var sliderArticleTitle = [ 'Hillary mocks bernie for looking like Doc from B2TF', 'United Nations Kicks out America Because of Possible Trump Presidency', 'Kangaroos burn down Australian Federal Reserve', 'NSA calls for mandatory brain micropchipping in 2017', 'Elon Musk Decides to quit Innovating to become a ballet dancer' ];    
 var picCounter = 0;
-var numberOfPics = 5;
 var picTimer;
+var changeIt = ""
 
-function setPic(){
-	//alert("hi I want this pic: " + backgroundPic[picCounter]);
-	$('slider').css('background-image', url + "backgroundPic[picCounter]");
 
-	picCounter += 1;
-		if(picCounter >= numberOfPics){
-		picCounter = 0;
-	}
-		
+function setPic() { 
+	
+	$('.sliderArticleTitle').empty();
+	$('.slider').css('background-image', 'url("' + sliderBackgroundPic[picCounter % sliderBackgroundPic.length] + '")');
+	 $('.authorSlideCircle').css('background-image', 'url("' + sliderProfilePic[picCounter %  sliderProfilePic.length] + '")');
+	 $('.sliderArticleTitle').append(sliderArticleTitle[picCounter %  sliderArticleTitle.length] + '")');
+   
+    picCounter++;
 }
 
 $(document).ready(function(){
 	
-	$('recentPosts').scrollNav();
-	
-	$('slider').css('background-image', backgroundPic[picCounter]);
-	
-	picTimer = setInterval(setPic, 2000);
+	picTimer = setInterval(setPic, 6000);
+    setPic();
 
 	$("#firstCat").hover(function () { 
 			   $(this).animate({'height': '104%'}, { duration: 100, queue: false });
@@ -109,6 +100,7 @@ $(document).ready(function(){
 			   $(this).animate({'width': '14%'}, { duration: 100, queue: false });
 			   $('#catChange').empty(changeIt);
 			   $('#catChange').css("border-style", "none");
+			   
 			   
 	});
 });
