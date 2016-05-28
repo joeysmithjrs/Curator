@@ -109,7 +109,7 @@ h2 {
 	position: relative;
 }
 .backgroundCont {
-	background-color: rgba(255,255,255,0.39);
+	background-color: rgba(255,255,255,.39);
 	list-style-type: none;
 	padding: 0;
 	height: 100%;
@@ -203,14 +203,70 @@ a {
 	font-size: 210%;
 	text-align: center;
 }
+
 .Coalition {
-	list-style-type: none;
+    list-style-type: none;
+    padding: 0;
+    height: 95%;
+    width: 24%;
+    margin-left: 72.3%;
+    margin-right: 3%;
+    margin-top: 14%;
+    position: absolute;
+    align-content: right;
+    float: right;
+    background-color: #FEFEF2;
+}
+.slideDescription {
+	background-color: rgba(255,255,255,.75);
 	padding: 0;
-	height: 95%;
-	width: 24%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 1%;
+	height: 28%;
+	width: 100%;	
+	margin-left: 0%;
+	margin-top: 42.5%;
+	margin-bottom: 0%;
 	position: absolute;
-	align-content: right;;
+	align-content: center;
+	background-size: cover;
+	
+}
+.authorSlideContainer{
+	height: 65px;
+	width: 65px;
+	padding: 0;
+	margin-left: 1.8%;
+	margin-top: 2.7%;
+	margin-bottom: 1%;
+	position: absolute;
+	align-content: center;
+	background-size: cover;
+	border-radius: 35%;
+	float: left;
+	
+}
+.authorSlideCircle {
+	border-radius: 50%;
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	border-style: solid;
+	border-color: rgba(255,255,255,.85);
+	border-width: medium;
+	background-size: contain;
+	float: left;
+}
+.slideArticleName {
+	padding: 0;
+	height: 60%;
+	width: 75%;
+	margin-left:20%;
+	margin-right: 5%;
+	margin-top: 2%;
+	position: absolute;
+	align-content: left;
+	background-color: rgba(255,255,255,0.85);
+	font-family: "Pacifico" ,"Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 1.3em;
+	text-align: center;
+	border-radius: 10%;
 }
