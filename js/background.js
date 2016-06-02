@@ -68,6 +68,8 @@ function setColor(){
 	$('body.page1').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
 	$('#sliderCont').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
 	$('.authorSlideContainer').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
+	$('.Popular').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
+	$('.circles').css('border-color', backgroundCol[colorCounter] + alphaVar + ')');
 	colorCounter += 1;
 		if(colorCounter >= numberOfColors){
 		colorCounter = -1;
