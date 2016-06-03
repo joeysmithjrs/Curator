@@ -70,12 +70,16 @@ function setColor(){
 	$('.authorSlideContainer').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
 	$('.Popular').css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
 	$('.circles').css('border-color', backgroundCol[colorCounter] + alphaVar + ')');
+	
+	
 	colorCounter += 1;
 		if(colorCounter >= numberOfColors){
 		colorCounter = -1;
 		}
 		
 }
+
+
 
 function manageAlpha() {
     sinCounter = sinCounter + Math.PI / 30.5;
@@ -85,6 +89,13 @@ function manageAlpha() {
 		alphaVar = (Math.abs(Math.sin(sinCounter)) + .035)
 	}
 }
+
+$('.popost').hover(function() {
+	$(this).css('background-color', backgroundCol[colorCounter] + alphaVar + ')');
+	});
+$('.popost').mouseout(function() {
+	$(this).css('background-color', 'rgba(154,206,225,1.00)');
+	});
 
 $(document).ready(function(){	
 
